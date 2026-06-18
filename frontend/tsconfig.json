@@ -1,0 +1,52 @@
+// {
+//   "compilerOptions": {
+//     /* Layout do Projeto */
+//     "rootDir": "./src",
+//     "outDir": "./dist",
+
+//     /* Ambiente Moderno */
+//     "module": "NodeNext",
+//     "target": "ESNext",
+//     "lib": ["ESNext", "DOM"], // Adicionei DOM caso use React/Frontend
+//     "moduleResolution": "NodeNext",
+
+//     /* Saídas de Compilação (Úteis para Debug e Bibliotecas) */
+//     "sourceMap": true,
+//     "declaration": true,
+//     "declarationMap": true,
+
+//     /* Rigor Total (Segurança máxima) */
+//     "strict": true,
+//     "noUncheckedIndexedAccess": true,
+//     "exactOptionalPropertyTypes": true,
+//     "noImplicitReturns": true,
+//     "noUnusedLocals": true,
+//     "noUnusedParameters": true,
+
+//     /* Compatibilidade e Performance */
+//     "jsx": "react-jsx",
+//     "isolatedModules": true,
+//     "skipLibCheck": true,
+//     "esModuleInterop": true,
+//     "forceConsistentCasingInFileNames": true
+//   },
+//   "include": ["src/**/*"],
+//   "exclude": ["node_modules", "dist"]
+// }
+
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext", // Garante que o TS gere código moderno
+    "moduleResolution": "bundler", // Essencial para o Vite entender os imports do node_modules
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src"]
+}
