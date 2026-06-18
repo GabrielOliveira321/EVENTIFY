@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Users, ArrowRight, X, Search, Globe, Plus } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import Layout from '../Components/Layout';
 
 const MOCK_COMMUNITIES = [

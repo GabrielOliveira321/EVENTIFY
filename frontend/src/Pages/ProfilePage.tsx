@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { UserCircle, MapPin, CreditCard, Phone, Calendar, Save, Loader2, Mail, Pencil, Shield, Sparkles } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { UserCircle, MapPin, CreditCard, Phone, Calendar, Save, Loader2, Mail, Pencil } from 'lucide-react';
 import Layout from '../Components/Layout';
 import { getProfile, updateProfile } from '../API/apiServices';
 

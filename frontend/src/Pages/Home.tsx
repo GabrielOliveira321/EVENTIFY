@@ -12,13 +12,6 @@ const CATEGORY_ICONS: Record<string, React.ReactNode> = {
   'Design': <Monitor size={18} />,
 };
 
-const CATEGORY_GRADIENTS: Record<string, string> = {
-  'Tech': 'from-blue-600 to-cyan-500',
-  'Música': 'from-purple-600 to-pink-500',
-  'Gastronomia': 'from-orange-600 to-red-500',
-  'Arte': 'from-rose-600 to-purple-500',
-  'Design': 'from-emerald-600 to-teal-500',
-};
 
 export default function Home() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);

@@ -20,6 +20,11 @@ import { ConfigModule } from '@nestjs/config';
       database: 'borala_med',
       autoLoadEntities: true,
       synchronize: true,
+      extra: {
+        max: 10,
+        connectionTimeoutMillis: 5000,
+        idleTimeoutMillis: 30000,
+      },
     }),
 
     AuthModule,

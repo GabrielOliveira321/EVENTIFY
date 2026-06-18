@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Ticket, Mail, Lock, User, ArrowRight, Sparkles, Shield, Eye, EyeOff } from 'lucide-react';
 import { FaChrome } from 'react-icons/fa';
-import { createUser, sendUserData, UserData } from '../API/apiServices';
+import { createUser, sendUserData } from '../API/apiServices';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 
 export default function AuthPage() {
@@ -52,7 +52,7 @@ export default function AuthPage() {
                 }
                 navigate(redirectTo);
             } else {
-                const result = await createUser({
+                await createUser({
                     userName: String(userName),
                     userEmail: String(userEmail),
                     password: String(password)
@@ -126,9 +126,9 @@ export default function AuthPage() {
                 <div className="relative z-10 flex gap-4 text-sm text-gray-500 font-medium">
                     <span>© 2026 Eventify</span>
                     <span>•</span>
-                    <a href="#" className="hover:text-white transition-colors">Privacidade</a>
+                    <button type="button" className="hover:text-white transition-colors bg-transparent border-none cursor-pointer text-sm text-gray-500 font-medium">Privacidade</button>
                     <span>•</span>
-                    <a href="#" className="hover:text-white transition-colors">Termos</a>
+                    <button type="button" className="hover:text-white transition-colors bg-transparent border-none cursor-pointer text-sm text-gray-500 font-medium">Termos</button>
                 </div>
             </div>
 
@@ -205,7 +205,7 @@ export default function AuthPage() {
                         <div className="space-y-2">
                             <div className="flex justify-between items-center ml-1">
                                 <label className="text-sm font-medium text-gray-300">Senha</label>
-                                {isLogin && <a href="#" className="text-xs text-purple-400 hover:text-purple-300 transition-colors">Esqueceu a senha?</a>}
+                                {isLogin && <button type="button" className="text-xs text-purple-400 hover:text-purple-300 transition-colors bg-transparent border-none cursor-pointer">Esqueceu a senha?</button>}
                             </div>
                             <div className="relative group">
                                 <Lock className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 group-focus-within:text-purple-500 transition-colors" size={20} />
