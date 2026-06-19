@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Eventify/static/css/main.955f06ae.css",
+    "main.js": "/Eventify/static/js/main.03f0198e.js",
+    "static/js/453.825386d9.chunk.js": "/Eventify/static/js/453.825386d9.chunk.js",
+    "index.html": "/Eventify/index.html",
+    "main.955f06ae.css.map": "/Eventify/static/css/main.955f06ae.css.map",
+    "main.03f0198e.js.map": "/Eventify/static/js/main.03f0198e.js.map",
+    "453.825386d9.chunk.js.map": "/Eventify/static/js/453.825386d9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.955f06ae.css",
+    "static/js/main.03f0198e.js"
+  ]
+}
